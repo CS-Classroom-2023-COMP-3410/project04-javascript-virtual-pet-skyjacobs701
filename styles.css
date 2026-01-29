@@ -1,0 +1,69 @@
+.pet-room {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.wall {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    background-color: #d6eadf;
+    z-index: 1;
+}
+
+.floor {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 35%;
+    background-color: #b8e0d2;
+    z-index: 3;
+}
+
+.dog {
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+    width: 450px;
+    height: 360px;
+    background-image: url("assets/dog-spritesheet.png");
+    background-repeat: no-repeat;
+    background-size: 300% 300%;
+    z-index: 4;
+}
+
+/* Will fix later these are all broken right now because the spritesheet is terrible*/
+
+.dog.idle {
+    background-position: 0% 5%;
+}
+
+.dog.playful {
+    background-position: 50% 5%;
+}
+
+.dog.playing {
+    background-position: 100% 5%;
+}
+
+.dog.sleeping {
+    background-position: 0% 55%;
+}
+
+.dog.hungry {
+    background-position: 50% 55%;
+}
+
+.dog.eating {
+    background-position: 100% 55%;
+}
+
+.dog.sad {
+    background-position: 0% 100%;
+}
