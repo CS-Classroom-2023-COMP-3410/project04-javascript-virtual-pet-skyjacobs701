@@ -1,7 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .pet-room {
     position: relative;
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -39,30 +45,48 @@
 }
 
 /* Please tell me why I did this to myself */
+/* These numbers literally took forever */
+/* Please tell me to stop doing stuff like this lmao */
 .dog.idle {
     background-image: url("assets/dog-idle.png");
 }
 
 .dog.playful {
     background-image: url("assets/dog-playful.png");
+    width: 48vh;
+    height: 48vh;
+    bottom: 15%;
 }
 
 .dog.playing {
     background-image: url("assets/dog-playing.png");
+    width: 58vh;
+    height: 58vh;
+    bottom: 18%;
 }
 
 .dog.sleeping {
     background-image: url("assets/dog-sleeping.png");
+    width: 62vh;
+    height: 62vh;
+    bottom: 10%;
 }
 
 .dog.hungry {
     background-image: url("assets/dog-hungry.png");
+    width: 46vh;
+    height: 46vh;
 }
 
 .dog.eating {
     background-image: url("assets/dog-eating.png");
+    width: 72vh;
+    height: 72vh;
+    bottom: 5%;
 }
 
 .dog.sad {
     background-image: url("assets/dog-sad.png");
+    width: 43vh;
+    height: 43vh;
 }
