@@ -1,3 +1,9 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -12,17 +18,38 @@ html, body {
 
 .layout td {
     padding: 0;
-    border: 10px solid white;
+    border: 15px solid white;
 }
 
 .sidebar {
     width: 250px;
     text-align: center;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 .sidebar.left { 
     background-color: #ffcbe1;
+}
+
+.sidebar.right {
+    background-color: #ffdab4;
+}
+
+.sidebar-title {
+    font-family: "DynaPuff", cursive;
+    font-size: 36px;
+    color: white;
+    padding: 14px 0;
+    margin: 0;
+    width: 100%;
+}
+
+.sidebar-title.left {
+    background-color: #ff97c3;
+}
+
+.sidebar-title.right {
+    background-color: #ffc080;
 }
 
 .status-box {
@@ -31,28 +58,22 @@ html, body {
     background-color: #ff97c3;
     color: white;
     padding: 14px 0;
-    margin: 60px auto;
+    margin: 75px auto 0 auto;
     border-radius: 8px;
     width: 80%;
-    box-sizing: border-box;
-}
-
-.sidebar.right {
-    background-color: #ffdab4;
 }
 
 button {
     font-family: "DynaPuff", cursive;
     font-size: 30px;
     padding: 14px 0;
-    margin: 30px auto;
+    margin: 75px auto 0 auto;
     border: none;
     border-radius: 8px;
     background-color: #ffc080;
     color: white;
     cursor: pointer;
     width: 80%;
-    box-sizing: border-box;
 }
 
 .pet-cell {
@@ -66,6 +87,10 @@ button {
 }
 
 #pet-name {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     font-family: "DynaPuff", cursive;
     font-size: 60px;
     color: #459d81;
@@ -73,21 +98,20 @@ button {
     width: 80%;
     border: none;
     outline: none;
-    margin: 12px auto;
-    padding: 20px 0;
-    display: block;
     background: transparent;
+    margin: 0;
+    padding: 0;
 }
 
 #pet-name::placeholder {
-    color: #5eb89b;;
+    color: #5eb89b;
     opacity: 0.35;
 }
-
 
 .wall {
     height: 50%;
     background-color: #d6eadf;
+    position: relative;
 }
 
 .floor {
