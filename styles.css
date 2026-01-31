@@ -17,14 +17,42 @@ html, body {
 
 .sidebar {
     width: 250px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .sidebar.left { 
-    background-color: #ffcbe1; 
+    background-color: #ffcbe1;
 }
 
-.sidebar.right { 
-    background-color: #ffdab4; 
+.status-box {
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    background-color: #ff97c3;
+    color: white;
+    padding: 14px 0;
+    margin: 60px auto;
+    border-radius: 8px;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+.sidebar.right {
+    background-color: #ffdab4;
+}
+
+button {
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    padding: 14px 0;
+    margin: 30px auto;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffc080;
+    color: white;
+    cursor: pointer;
+    width: 80%;
+    box-sizing: border-box;
 }
 
 .pet-cell {
@@ -37,17 +65,25 @@ html, body {
     height: 100%;
 }
 
-.pet-name {
+#pet-name {
     font-family: "DynaPuff", cursive;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    padding: 12px 0;
-    font-size: 50px;
+    font-size: 60px;
     color: #459d81;
+    text-align: center;
+    width: 80%;
+    border: none;
+    outline: none;
+    margin: 12px auto;
+    padding: 20px 0;
+    display: block;
+    background: transparent;
 }
+
+#pet-name::placeholder {
+    color: #5eb89b;;
+    opacity: 0.35;
+}
+
 
 .wall {
     height: 50%;
@@ -70,9 +106,6 @@ html, body {
     background-position: center;
 }
 
-/* Please tell me why I did this to myself */
-/* These numbers literally took forever */
-/* Please tell me to stop doing stuff like this */
 .dog.idle {
     background-image: url("assets/dog-idle.png");
     bottom: 20%;
@@ -92,20 +125,6 @@ html, body {
     bottom: 17%;
 }
 
-.dog.sleepy {
-    background-image: url("assets/dog-sleepy.png");
-    width: 48vh;
-    height: 48vh;
-    bottom: 15%;
-}
-
-.dog.sleeping {
-    background-image: url("assets/dog-sleeping.png");
-    width: 62vh;
-    height: 62vh;
-    bottom: 8%;
-}
-
 .dog.hungry {
     background-image: url("assets/dog-hungry.png");
     width: 46vh;
@@ -118,4 +137,18 @@ html, body {
     width: 72vh;
     height: 72vh;
     bottom: 3%;
+}
+
+.dog.sleepy {
+    background-image: url("assets/dog-sleepy.png");
+    width: 48vh;
+    height: 48vh;
+    bottom: 15%;
+}
+
+.dog.sleeping {
+    background-image: url("assets/dog-sleeping.png");
+    width: 62vh;
+    height: 62vh;
+    bottom: 8%;
 }

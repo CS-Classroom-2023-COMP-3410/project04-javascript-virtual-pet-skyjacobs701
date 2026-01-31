@@ -10,16 +10,25 @@
     <body>
         <table class="layout">
             <tr>
-                <td class="sidebar left"></td>
+                <td class="sidebar left">
+                    <div class="status-box">Happiness<br><span class="happiness">100</span></div>
+                    <div class="status-box">Hunger<br><span class="happiness">100</span></div>
+                    <div class="status-box">Energy<br><span class="happiness">100</span></div>
+                </td>
                 <td class="pet-cell">
                     <div class="pet-room">
-                        <h1 class="pet-name">Your Virtual Pet</h1>
-                        <div class="wall"></div>
+                        <div class="wall">
+                            <input id="pet-name" type="text" placeholder="Your Pet's Name" autocomplete="off">
+                        </div>
                         <div class="floor"></div>
                         <div class="dog idle"></div>
                     </div>
                 </td>
-                <td class="sidebar right"></td>
+                <td class="sidebar right">
+                    <button>Play<br>&#9917;</button>
+                    <button>Feed<br>&#129460;</button>
+                    <button>Sleep<br>&#128164;</button>
+                </td>
             </tr>
         </table>
 
