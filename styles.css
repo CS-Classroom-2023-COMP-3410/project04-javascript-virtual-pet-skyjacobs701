@@ -8,7 +8,6 @@ html, body {
     width: 100%;
     height: 100vh;
     border-collapse: collapse;
-    table-layout: fixed;
 }
 
 .layout td {
@@ -20,16 +19,15 @@ html, body {
     width: 250px;
 }
 
-.sidebar.left {
-    background-color: #ffcbe1;
+.sidebar.left { 
+    background-color: #ffcbe1; 
 }
 
-.sidebar.right {
-    background-color: #ffdab4;
+.sidebar.right { 
+    background-color: #ffdab4; 
 }
 
 .pet-cell {
-    width: auto;
     height: 100%;
 }
 
@@ -37,85 +35,87 @@ html, body {
     position: relative;
     width: 100%;
     height: 100%;
-    overflow: hidden;
 }
 
-.wall {
+.pet-name {
+    font-family: "DynaPuff", cursive;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
+    text-align: center;
+    padding: 12px 0;
+    font-size: 50px;
+    color: #459d81;
+}
+
+.wall {
     height: 50%;
     background-color: #d6eadf;
-    z-index: 1;
 }
 
 .floor {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
     height: 50%;
-    background-color: #b8e0d2;
-    z-index: 3;
+    background-color: #a6d8c7;
 }
 
 .dog {
     position: absolute;
     left: 50%;
-    bottom: 20%;
     transform: translateX(-50%);
     width: 50vh;
     height: 50vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    z-index: 4;
 }
 
 /* Please tell me why I did this to myself */
 /* These numbers literally took forever */
-/* Please tell me to stop doing stuff like this lmao */
+/* Please tell me to stop doing stuff like this */
 .dog.idle {
     background-image: url("assets/dog-idle.png");
-}
-
-.dog.playful {
-    background-image: url("assets/dog-playful.png");
-    width: 48vh;
-    height: 48vh;
-    bottom: 15%;
-}
-
-.dog.playing {
-    background-image: url("assets/dog-playing.png");
-    width: 58vh;
-    height: 58vh;
-    bottom: 18%;
-}
-
-.dog.sleeping {
-    background-image: url("assets/dog-sleeping.png");
-    width: 62vh;
-    height: 62vh;
-    bottom: 10%;
-}
-
-.dog.hungry {
-    background-image: url("assets/dog-hungry.png");
-    width: 46vh;
-    height: 46vh;
-}
-
-.dog.eating {
-    background-image: url("assets/dog-eating.png");
-    width: 72vh;
-    height: 72vh;
-    bottom: 5%;
+    bottom: 20%;
 }
 
 .dog.sad {
     background-image: url("assets/dog-sad.png");
     width: 43vh;
     height: 43vh;
+    bottom: 20%;
+}
+
+.dog.playing {
+    background-image: url("assets/dog-playing.png");
+    width: 58vh;
+    height: 58vh;
+    bottom: 17%;
+}
+
+.dog.sleepy {
+    background-image: url("assets/dog-sleepy.png");
+    width: 48vh;
+    height: 48vh;
+    bottom: 15%;
+}
+
+.dog.sleeping {
+    background-image: url("assets/dog-sleeping.png");
+    width: 62vh;
+    height: 62vh;
+    bottom: 8%;
+}
+
+.dog.hungry {
+    background-image: url("assets/dog-hungry.png");
+    width: 46vh;
+    height: 46vh;
+    bottom: 20%;
+}
+
+.dog.eating {
+    background-image: url("assets/dog-eating.png");
+    width: 72vh;
+    height: 72vh;
+    bottom: 3%;
 }

@@ -1,7 +1,8 @@
 // will delete later, this is to test stuff
 const dog = document.querySelector('.dog');
 
-const dogStates = ['idle', 'playful', 'playing', 'sleeping', 'hungry', 'eating', 'sad'];   
+const dogStates = ['idle', 'sad', 'playing', 'sleepy', 'sleeping', 'hungry', 'eating'];   
+
 let currentIndex = 0;
 
 dog.addEventListener('click', function() {
