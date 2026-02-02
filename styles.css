@@ -1,3 +1,9 @@
+/*
+Skylar Jacobs 
+Project 4: Virtual Pet
+*/
+
+/* Global styles */
 *,
 *::before,
 *::after {
@@ -10,6 +16,7 @@ html, body {
     height: 100%;
 }
 
+/* Layout styles */
 .layout {
     width: 100%;
     height: 100vh;
@@ -21,6 +28,7 @@ html, body {
     border: 15px solid white;
 }
 
+/* Sidebar styles */
 .sidebar {
     width: 250px;
     text-align: center;
@@ -52,6 +60,7 @@ html, body {
     background-color: #ffc080;
 }
 
+/* Status box styles */
 .status-box {
     font-family: "DynaPuff", cursive;
     font-size: 30px;
@@ -63,6 +72,7 @@ html, body {
     width: 80%;
 }
 
+/* Button styles */
 button {
     font-family: "DynaPuff", cursive;
     font-size: 30px;
@@ -76,6 +86,7 @@ button {
     width: 80%;
 }
 
+/* Pet room/cell styles */
 .pet-cell {
     height: 100%;
 }
@@ -86,6 +97,7 @@ button {
     height: 100%;
 }
 
+/* Pet name styles */
 #pet-name {
     position: absolute;
     top: 15%;
@@ -108,6 +120,22 @@ button {
     opacity: 0.35;
 }
 
+/* Status text styles */
+p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    color: #459d81;
+    text-align: center;
+    width: 80%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Wall and floor styles */
 .wall {
     height: 50%;
     background-color: #d6eadf;
@@ -119,6 +147,7 @@ button {
     background-color: #a6d8c7;
 }
 
+/* Dog styles */
 .dog {
     position: absolute;
     left: 50%;
@@ -130,6 +159,9 @@ button {
     background-position: center;
 }
 
+/* FYI, I spent hours on the numbers for these alone because the different sprites weren't all
+the same size even when I took the time to get individual pictures of them. So allow me to be 
+proud of myself for these. Please it's all I have */
 .dog.idle {
     background-image: url("assets/dog-idle.png");
     bottom: 20%;

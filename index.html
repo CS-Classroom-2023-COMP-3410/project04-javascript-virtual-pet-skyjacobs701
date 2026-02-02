@@ -1,3 +1,7 @@
+<!-- 
+Skylar Jacobs 
+Project 4: Virtual Pet
+ -->
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -8,35 +12,40 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
+        <!-- Table to handle the layout -->
         <table class="layout">
             <tr>
+                <!-- Left sidebar displays statuses -->
                 <td class="sidebar left">
                     <div class="sidebar-title left">Pet Status</div>
                     <div class="status-box">Happiness<br><span class="happiness">100</span></div>
                     <div class="status-box">Hunger<br><span class="hunger">100</span></div>
                     <div class="status-box">Energy<br><span class="energy">100</span></div>
                 </td>
+                <!-- Pet's room (I did my best to make it look like a wall and floor) -->
                 <td class="pet-cell">
                     <div class="pet-room">
                         <div class="wall">
+                            <!-- Input box to allow the user to change the pet's name -->
                             <input id="pet-name" type="text" placeholder="Your Pet's Name" autocomplete="off">
+                            <p><span class="pet-name">Your pet</span> is <span class="status">happy</span>.</p>
                         </div>
                         <div class="floor"></div>
                         <div class="dog idle"></div>
+                        <!-- Credit to pch.vector on Freepik for dog spritesheet -->
                     </div>
                 </td>
+                <!-- Right sidebar displays action buttons -->
                 <td class="sidebar right">
                     <div class="sidebar-title right">Actions</div>
+                    <!-- Apparently a tennis ball emoji doesn't exist which I'm kind of mad about 
+                     so I had to use a soccer ball instead for the play button-->
                     <button id="play-button">Play<br>&#9917;</button>
                     <button id="feed-button">Feed<br>&#129460;</button>
                     <button id="sleep-button">Sleep<br>&#128164;</button>
                 </td>
             </tr>
         </table>
-
-        <!-- <footer>
-            <a href="https://www.freepik.com/free-vector/cartoon-dog-animal-playing-white-cute-dogs-different-action-emotion-happy-smiling-pet-sleeping-eating-having-fun-funny-puppy-avatar-set-cartoon-illustration-collection_20827574.htm#fromView=search&page=1&position=3&uuid=6d072f22-12bc-4acd-b838-f6cc26c8359f&query=dog+in+different+situations">Image by pch.vector on Freepik</a>
-        </footer> -->
          <script src="script.js"></script>
     </body>
 </html>
